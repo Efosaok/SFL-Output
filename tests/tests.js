@@ -6,6 +6,14 @@
 const expect = require('chai').expect;
 const myApp = require('../apps/raindrop');
 
+describe('It handles invalid input', () => {
+  it('returns an error message when passed invalid inputs', () => {
+  	expect(myApp([])).to.equal('Invalid Input Type');
+  	expect(myApp({})).to.equal('Invalid Input Type');
+  	expect(myApp('')).to.equal('Invalid Input Type');
+  });
+});
+
 describe('It should return Pling, Plang or Plong if 3,5,7 is a prime factor', () => {
   it('returns Pling when passed number has 3 as primefactor', () => {
   	expect(myApp(3)).to.equal('Pling');
