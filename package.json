@@ -1,0 +1,26 @@
+{
+  "name": "raindrops",
+  "version": "1.0.0",
+  "description": "A simple code challenge output for Andela's SFL",
+  "main": "index.js",
+  "directories": {
+    "test": "node mocha tests/tests.js"
+  },
+  "scripts": {
+    "test": "mocha tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efosaok/SFL-Output.git"
+  },
+  "author": "Efosa Okpugie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Efosaok/SFL-Output/issues"
+  },
+  "homepage": "https://github.com/Efosaok/SFL-Output#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
